@@ -1,0 +1,88 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    .col-1 {
+        margin: 12em 0 0 30%;
+        @media screen and (width<=1080px) {
+            grid-row: 2;
+            margin: 1em 0;
+            text-align: center;
+            padding: 0 1em;
+        }
+        h1 {
+            font-size: 5rem;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            .title {
+                color: $DeSaturatedRed;
+                font-weight: 300;
+            }
+        }
+        p {
+            margin-top: 1em;
+            color: $DeSaturatedRed;
+            max-width: 400px;
+            @media screen and (width<=1080px) {
+              margin-inline: auto;
+            }
+        }
+        .mail {
+            margin-top: 1.5em;
+            display: flex;
+            align-items: center;
+            @media screen and (width<=1080px) {
+                justify-content: center;
+            }
+            input {
+                font-size: inherit;
+                font-family: inherit;
+                padding: .5em 1em;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border: none;
+                border-radius: 20px;
+                border: 1px solid $DeSaturatedRed;
+                outline: none;
+                height: 40px;
+                &::placeholder {
+                    color: $DeSaturatedRed;
+                }
+                &.invalid {
+                border-color: red;
+                color: red;
+            }
+            }
+            button {
+                border: none;
+                outline: none;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .5em 1em;
+                background-image: $linearPink;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-radius: 20px;
+                width: 100px;
+                height: 40px;
+                margin-left: -32px;
+                cursor: pointer;
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+              }
+        }
+    }
+
+    @media screen and (width<=1080px) {
+        grid-template-columns: 1fr;
+    }
+}

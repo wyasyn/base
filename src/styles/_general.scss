@@ -1,0 +1,19 @@
+
+
+.desktop {
+    @media screen and (width<=1080px) {
+        display: none;
+    }
+}
+.mobile {
+    @media screen and (width>1080px) {
+        display: none;
+    }
+}
+
+.container {
+    width: 100%;
+    @media screen and (width<=1080px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    @media screen and (width<=1080px) {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: $linearLight;
+    }
+ .container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1em;
+    .logo {
+        img {
+            width: 150px;
+        }
+    }
+ }
+}

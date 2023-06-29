@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 65.5%;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+@media screen and (width <= 1080px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (width > 1080px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.container {
+  width: 100%;
+}
+@media screen and (width <= 1080px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+@media screen and (width <= 1080px) {
+  .Navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  }
+}
+.Navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1em;
+}
+.Navbar .container .logo img {
+  width: 150px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.header .col-1 {
+  margin: 12em 0 0 30%;
+}
+@media screen and (width <= 1080px) {
+  .header .col-1 {
+    grid-row: 2;
+    margin: 1em 0;
+    text-align: center;
+    padding: 0 1em;
+  }
+}
+.header .col-1 h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+.header .col-1 h1 .title {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.header .col-1 p {
+  margin-top: 1em;
+  color: hsl(0, 36%, 70%);
+  max-width: 400px;
+}
+@media screen and (width <= 1080px) {
+  .header .col-1 p {
+    margin-inline: auto;
+  }
+}
+.header .col-1 .mail {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+}
+@media screen and (width <= 1080px) {
+  .header .col-1 .mail {
+    justify-content: center;
+  }
+}
+.header .col-1 .mail input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 36%, 70%);
+  outline: none;
+  height: 40px;
+}
+.header .col-1 .mail input::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.header .col-1 .mail input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.header .col-1 .mail input.invalid {
+  border-color: red;
+  color: red;
+}
+.header .col-1 .mail button {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5em 1em;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  margin-left: -32px;
+  cursor: pointer;
+}
+.header .col-1 .mail button img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (width <= 1080px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=index.css.map */
